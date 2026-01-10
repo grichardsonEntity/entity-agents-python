@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "entity-agents"
+version = "1.0.0"
+description = "A team of 11 specialized autonomous AI agents for software development"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Entity", email = "dev@entity.com"}
+]
+keywords = ["ai", "agents", "claude", "automation", "development"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "black>=23.0",
+    "ruff>=0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/grichardsonEntity/entity-agents-python"
+Repository = "https://github.com/grichardsonEntity/entity-agents-python"
+Documentation = "https://github.com/grichardsonEntity/entity-agents-python#readme"
+
+[project.scripts]
+entity-agents = "entity_agents:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["entity_agents*"]
+
+[tool.setuptools.package-dir]
+entity_agents = "."
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N", "UP"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
