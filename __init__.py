@@ -1,11 +1,12 @@
 """
 Entity Agents - Python Edition
 
-A team of 10 specialized autonomous AI agents for software development.
+A team of 11 specialized autonomous AI agents for software development.
 
 Consolidated Team:
 - Sydney: Full Stack Developer (merged Sydney + original Valentina)
 - Valentina: Technical Writer & Content Strategist (merged Sugar + Harper)
+- Vera: Cloud & AI Platform Specialist (GCP, Vertex AI, HIPAA)
 """
 
 from .shared import BaseAgent, BaseConfig, TaskResult, ApprovalRequest
@@ -21,8 +22,9 @@ from .sophie import SophieAgent, sophie_config
 from .asheton import AshetonAgent, asheton_config
 from .maxwell import MaxwellAgent, maxwell_config
 from .quinn import QuinnAgent, quinn_config
+from .vera import VeraAgent, vera_config
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 
 __all__ = [
     # Base classes
@@ -41,6 +43,7 @@ __all__ = [
     "AshetonAgent",
     "MaxwellAgent",
     "QuinnAgent",
+    "VeraAgent",
     # Configs
     "sydney_config",
     "valentina_config",
@@ -52,6 +55,7 @@ __all__ = [
     "asheton_config",
     "maxwell_config",
     "quinn_config",
+    "vera_config",
 ]
 
 # Agent registry for dynamic access
@@ -66,6 +70,7 @@ AGENTS = {
     "asheton": AshetonAgent,
     "maxwell": MaxwellAgent,
     "quinn": QuinnAgent,
+    "vera": VeraAgent,
 }
 
 
