@@ -1,17 +1,27 @@
 """
 Entity Agents - Python Edition
 
-A team of 11 specialized autonomous AI agents for software development.
+A team of 12 specialized autonomous AI agents for software development.
 
-Consolidated Team:
+Team:
+- Chief: Chief of Staff - Executive Assistant & Project Orchestrator
 - Sydney: Full Stack Developer (merged Sydney + original Valentina)
 - Valentina: Technical Writer & Content Strategist (merged Sugar + Harper)
 - Vera: Cloud & AI Platform Specialist (GCP, Vertex AI, HIPAA)
+- Amber: Systems Architect
+- Victoria: AI Researcher
+- BrettJr: Cybersecurity Specialist
+- Tango: QA Tester
+- Sophie: Mobile Developer
+- Asheton: Product Strategist
+- Maxwell: Data Research Engineer
+- Quinn: Network Engineer
 """
 
 from .shared import BaseAgent, BaseConfig, TaskResult, ApprovalRequest
 
 # Agent imports
+from .chief import ChiefOfStaffAgent, chief_config
 from .sydney import SydneyAgent, sydney_config
 from .valentina import ValentinaAgent, valentina_config
 from .amber import AmberAgent, amber_config
@@ -24,7 +34,7 @@ from .maxwell import MaxwellAgent, maxwell_config
 from .quinn import QuinnAgent, quinn_config
 from .vera import VeraAgent, vera_config
 
-__version__ = "2.1.0"
+__version__ = "2.2.0"
 
 __all__ = [
     # Base classes
@@ -33,6 +43,7 @@ __all__ = [
     "TaskResult",
     "ApprovalRequest",
     # Agents
+    "ChiefOfStaffAgent",
     "SydneyAgent",
     "ValentinaAgent",
     "AmberAgent",
@@ -45,6 +56,7 @@ __all__ = [
     "QuinnAgent",
     "VeraAgent",
     # Configs
+    "chief_config",
     "sydney_config",
     "valentina_config",
     "amber_config",
@@ -60,6 +72,7 @@ __all__ = [
 
 # Agent registry for dynamic access
 AGENTS = {
+    "chief": ChiefOfStaffAgent,
     "sydney": SydneyAgent,
     "valentina": ValentinaAgent,
     "amber": AmberAgent,
