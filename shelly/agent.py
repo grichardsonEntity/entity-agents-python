@@ -1,5 +1,5 @@
 """
-Chief of Staff Agent - Executive Assistant & Project Orchestrator
+Shelly Agent - Chief of Staff, Executive Assistant & Project Orchestrator
 
 Monitors all projects and agent teams, provides status updates,
 coordinates work, and helps human supervisors manage everything.
@@ -13,12 +13,12 @@ from pathlib import Path
 from typing import Optional, List, Dict, Any
 
 from ..shared import BaseAgent, TaskResult
-from .config import chief_config, MONITORED_PROJECTS, PYTHON_AGENTS, NODE_AGENTS
+from .config import shelly_config, MONITORED_PROJECTS, PYTHON_AGENTS, NODE_AGENTS
 
 
-class ChiefOfStaffAgent(BaseAgent):
+class ShellyAgent(BaseAgent):
     """
-    Chief of Staff - Executive Assistant & Project Orchestrator
+    Shelly - Chief of Staff, Executive Assistant & Project Orchestrator
 
     Monitors:
     - All Entity projects
@@ -33,7 +33,7 @@ class ChiefOfStaffAgent(BaseAgent):
     """
 
     def __init__(self, config=None):
-        super().__init__(config or chief_config)
+        super().__init__(config or shelly_config)
         self.projects = MONITORED_PROJECTS
         self.python_agents = PYTHON_AGENTS
         self.node_agents = NODE_AGENTS
@@ -409,7 +409,7 @@ async def main():
     """CLI entry point"""
     import argparse
 
-    parser = argparse.ArgumentParser(description="Chief of Staff - Project Orchestrator")
+    parser = argparse.ArgumentParser(description="Shelly - Chief of Staff, Project Orchestrator")
 
     parser.add_argument("--status", action="store_true", help="Quick status overview")
     parser.add_argument("--briefing", action="store_true", help="Full daily briefing")
@@ -422,7 +422,7 @@ async def main():
 
     args = parser.parse_args()
 
-    agent = ChiefOfStaffAgent()
+    agent = ShellyAgent()
 
     result = None
 

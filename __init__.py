@@ -4,7 +4,7 @@ Entity Agents - Python Edition
 A team of 12 specialized autonomous AI agents for software development.
 
 Team:
-- Chief: Chief of Staff - Executive Assistant & Project Orchestrator
+- Shelly: Chief of Staff - Executive Assistant & Project Orchestrator
 - Sydney: Full Stack Developer (merged Sydney + original Valentina)
 - Valentina: Technical Writer & Content Strategist (merged Sugar + Harper)
 - Vera: Cloud & AI Platform Specialist (GCP, Vertex AI, HIPAA)
@@ -21,7 +21,7 @@ Team:
 from .shared import BaseAgent, BaseConfig, TaskResult, ApprovalRequest
 
 # Agent imports
-from .chief import ChiefOfStaffAgent, chief_config
+from .shelly import ShellyAgent, shelly_config
 from .sydney import SydneyAgent, sydney_config
 from .valentina import ValentinaAgent, valentina_config
 from .amber import AmberAgent, amber_config
@@ -43,7 +43,7 @@ __all__ = [
     "TaskResult",
     "ApprovalRequest",
     # Agents
-    "ChiefOfStaffAgent",
+    "ShellyAgent",
     "SydneyAgent",
     "ValentinaAgent",
     "AmberAgent",
@@ -56,7 +56,7 @@ __all__ = [
     "QuinnAgent",
     "VeraAgent",
     # Configs
-    "chief_config",
+    "shelly_config",
     "sydney_config",
     "valentina_config",
     "amber_config",
@@ -72,7 +72,7 @@ __all__ = [
 
 # Agent registry for dynamic access
 AGENTS = {
-    "chief": ChiefOfStaffAgent,
+    "shelly": ShellyAgent,
     "sydney": SydneyAgent,
     "valentina": ValentinaAgent,
     "amber": AmberAgent,
