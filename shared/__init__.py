@@ -4,7 +4,7 @@ Entity Agents - Shared Utilities
 Common functionality for all agents.
 """
 
-from .base_agent import BaseAgent, TaskResult, ApprovalRequest
+from .base_agent import BaseAgent, TaskResult, ApprovalRequest, BLOCKED_MARKER
 from .config import BaseConfig, NotificationConfig, MCPServerConfig, PermissionMode
 from .notifier import Notifier
 from .github import GitHubClient
