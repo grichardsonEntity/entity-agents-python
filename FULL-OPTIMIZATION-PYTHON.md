@@ -22,7 +22,7 @@ This is a comprehensive prompt that transforms your Python agent team:
 find . -type d -maxdepth 1 -name "[a-z]*" | grep -v __pycache__ | grep -v _archived | grep -v shared | grep -v docs | grep -v "^\.$" | sort
 ```
 
-Expected agents: sydney, valentina, amber, victoria, brettjr, tango, sugar, sophie, asheton, maxwell, harper, quinn
+Expected agents: sydney, valentina, amber, victoria, brettjr, tango, sugar, sophie, asheton, denisy, harper, quinn
 
 ## Step 1.2: Read Every Agent File Completely
 
@@ -82,7 +82,7 @@ Save to `docs/agent-analysis-report.md`:
 | Sugar | X | X | X | X | X | X | X | X.X |
 | Sophie | X | X | X | X | X | X | X | X.X |
 | Asheton | X | X | X | X | X | X | X | X.X |
-| Maxwell | X | X | X | X | X | X | X | X.X |
+| Denisy | X | X | X | X | X | X | X | X.X |
 | Harper | X | X | X | X | X | X | X | X.X |
 | Quinn | X | X | X | X | X | X | X | X.X |
 
@@ -332,7 +332,7 @@ from .brettjr import BrettJrAgent, brettjr_config
 from .tango import TangoAgent, tango_config
 from .sophie import SophieAgent, sophie_config
 from .asheton import AshetonAgent, asheton_config
-from .maxwell import MaxwellAgent, maxwell_config
+from .denisy import DenisyAgent, denisy_config
 from .quinn import QuinnAgent, quinn_config
 
 __all__ = [
@@ -344,7 +344,7 @@ __all__ = [
     "TangoAgent", "tango_config",
     "SophieAgent", "sophie_config",
     "AshetonAgent", "asheton_config",
-    "MaxwellAgent", "maxwell_config",
+    "DenisyAgent", "denisy_config",
     "QuinnAgent", "quinn_config",
 ]
 ```
@@ -355,7 +355,7 @@ __all__ = [
 
 ```bash
 echo "=== Syntax Check ==="
-for agent in sydney valentina amber victoria brettjr tango sophie asheton maxwell quinn; do
+for agent in sydney valentina amber victoria brettjr tango sophie asheton denisy quinn; do
     python -m py_compile "$agent/config.py" && python -m py_compile "$agent/agent.py" && echo "✓ $agent"
 done
 
@@ -370,7 +370,7 @@ from brettjr import BrettJrAgent
 from tango import TangoAgent
 from sophie import SophieAgent
 from asheton import AshetonAgent
-from maxwell import MaxwellAgent
+from denisy import DenisyAgent
 from quinn import QuinnAgent
 
 print('✓ Sydney:', SydneyAgent().config.role)

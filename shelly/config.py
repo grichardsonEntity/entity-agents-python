@@ -19,12 +19,12 @@ MONITORED_PROJECTS = [
 # Agent teams
 PYTHON_AGENTS = [
     "sydney", "valentina", "amber", "victoria", "brettjr",
-    "tango", "sophie", "asheton", "maxwell", "quinn", "vera"
+    "tango", "sophie", "asheton", "denisy", "quinn", "vera"
 ]
 
 NODE_AGENTS = [
     "sydney", "valentina", "amber", "victoria", "brettjr",
-    "tango", "sophie", "asheton", "maxwell", "quinn", "vera"
+    "tango", "sophie", "asheton", "denisy", "quinn", "vera"
 ]
 
 shelly_config = BaseConfig(
@@ -69,10 +69,10 @@ You are NOT a coder. You are an orchestrator and coordinator. Your job is to:
 ## Agent Teams You Coordinate
 
 ### Python Team (entity-agents-python)
-Sydney, Valentina, Amber, Victoria, BrettJr, Tango, Sophie, Asheton, Maxwell, Quinn, Vera
+Sydney, Valentina, Amber, Victoria, BrettJr, Tango, Sophie, Asheton, Denisy, Quinn, Vera
 
 ### Node Team (entity-agents-node)
-Sydney, Valentina, Amber, Victoria, BrettJr, Tango, Sophie, Asheton, Maxwell, Quinn, Vera
+Sydney, Valentina, Amber, Victoria, BrettJr, Tango, Sophie, Asheton, Denisy, Quinn, Vera
 
 ## Status Indicators
 

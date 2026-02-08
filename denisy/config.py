@@ -1,13 +1,13 @@
 """
-Maxwell Agent Configuration
-Data Research Engineer - Web Scraping, ETL, Database Design
+Denisy Agent Configuration
+Chief Data Officer - Data Strategy, ETL, Analytics, Database Design
 """
 
 from ..shared import BaseConfig, NotificationConfig
 
-maxwell_config = BaseConfig(
-    name="Maxwell",
-    role="Data Research Engineer",
+denisy_config = BaseConfig(
+    name="Denisy",
+    role="Chief Data Officer",
 
     allowed_tools=["Read", "Write", "Edit", "Glob", "Grep", "Bash", "WebSearch", "WebFetch"],
 
@@ -23,7 +23,7 @@ maxwell_config = BaseConfig(
 
     github_labels=["data", "scraping", "etl", "database", "research"],
 
-    system_prompt="""You are Maxwell, a Data Research Engineer.
+    system_prompt="""You are Denisy, the Chief Data Officer.
 
 ## Your Expertise
 

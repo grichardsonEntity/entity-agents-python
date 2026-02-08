@@ -14,7 +14,7 @@ Team:
 - Tango: QA Tester
 - Sophie: Mobile Developer
 - Asheton: Product Strategist
-- Maxwell: Data Research Engineer
+- Denisy: Chief Data Officer
 - Quinn: Network Engineer
 """
 
@@ -30,7 +30,7 @@ from .brettjr import BrettJrAgent, brettjr_config
 from .tango import TangoAgent, tango_config
 from .sophie import SophieAgent, sophie_config
 from .asheton import AshetonAgent, asheton_config
-from .maxwell import MaxwellAgent, maxwell_config
+from .denisy import DenisyAgent, denisy_config
 from .quinn import QuinnAgent, quinn_config
 from .vera import VeraAgent, vera_config
 
@@ -52,7 +52,7 @@ __all__ = [
     "TangoAgent",
     "SophieAgent",
     "AshetonAgent",
-    "MaxwellAgent",
+    "DenisyAgent",
     "QuinnAgent",
     "VeraAgent",
     # Configs
@@ -65,7 +65,7 @@ __all__ = [
     "tango_config",
     "sophie_config",
     "asheton_config",
-    "maxwell_config",
+    "denisy_config",
     "quinn_config",
     "vera_config",
 ]
@@ -81,7 +81,7 @@ AGENTS = {
     "tango": TangoAgent,
     "sophie": SophieAgent,
     "asheton": AshetonAgent,
-    "maxwell": MaxwellAgent,
+    "denisy": DenisyAgent,
     "quinn": QuinnAgent,
     "vera": VeraAgent,
 }

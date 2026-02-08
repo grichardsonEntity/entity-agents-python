@@ -28,7 +28,7 @@ print(result.output)
 | **Sugar** | Documentation Specialist | Technical writing, API docs, diagrams |
 | **Sophie** | Mobile Developer | React Native, PWA, iOS, Android |
 | **Asheton** | Product Strategist | Requirements, roadmap, prioritization |
-| **Maxwell** | Data Research Engineer | Web scraping, ETL, databases |
+| **Denisy** | Chief Data Officer | Data strategy, ETL, analytics, databases |
 | **Harper** | Grant Researcher & Writer | Funding, proposals, compliance |
 | **Quinn** | Network Engineer | Infrastructure, Docker, K8s, VPN |
 
@@ -150,7 +150,7 @@ entity-agents-python/
 ├── sugar/              # Documentation
 ├── sophie/             # Mobile Developer
 ├── asheton/            # Product Strategist
-├── maxwell/            # Data Engineer
+├── denisy/             # Chief Data Officer
 ├── harper/             # Grant Writer
 └── quinn/              # Network Engineer
 ```

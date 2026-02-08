@@ -1,29 +1,29 @@
 """
-Maxwell Agent - Data Research Engineer
+Denisy Agent - Chief Data Officer
 
-Expert in web scraping, data collection, ETL pipelines, and database design.
+Expert in data strategy, analytics, ETL pipelines, and database design.
 """
 
 import asyncio
 from typing import Optional, List, Dict
 
 from ..shared import BaseAgent, TaskResult
-from .config import maxwell_config
+from .config import denisy_config
 
 
-class MaxwellAgent(BaseAgent):
+class DenisyAgent(BaseAgent):
     """
-    Maxwell - Data Research Engineer
+    Denisy - Chief Data Officer
 
     Specializes in:
-    - Web scraping
-    - Data collection
+    - Data strategy & governance
+    - Data collection & analytics
     - ETL pipelines
     - Database design
     """
 
     def __init__(self, config=None):
-        super().__init__(config or maxwell_config)
+        super().__init__(config or denisy_config)
 
     async def research_sources(self, topic: str) -> TaskResult:
         """Research data sources for a topic"""
@@ -307,7 +307,7 @@ async def main():
     import argparse
     import json
 
-    parser = argparse.ArgumentParser(description="Maxwell - Data Research Agent")
+    parser = argparse.ArgumentParser(description="Denisy - Chief Data Officer")
     parser.add_argument("--research", type=str, help="Research sources for topic")
     parser.add_argument("--scrape", type=str, help="Build scraper for URL")
     parser.add_argument("--spec", type=str, help="Data specification for scraper")
@@ -319,7 +319,7 @@ async def main():
 
     args = parser.parse_args()
 
-    agent = MaxwellAgent()
+    agent = DenisyAgent()
 
     if args.status:
         print(json.dumps(agent.get_status(), indent=2))
@@ -355,8 +355,8 @@ async def main():
         print(result.output)
         return
 
-    print("Maxwell - Data Research Engineer")
-    print("=================================")
+    print("Denisy - Chief Data Officer")
+    print("===========================")
     print("Use --help for options")
 
 
