@@ -7,7 +7,7 @@ name = "entity-agents"
 version = "1.0.0"
 description = "A team of 11 specialized autonomous AI agents for software development"
 readme = "README.md"
-license = {text = "MIT"}
+license = {text = "Proprietary"}
 requires-python = ">=3.10"
 authors = [
     {name = "Entity", email = "dev@entity.com"}
@@ -16,7 +16,7 @@ keywords = ["ai", "agents", "claude", "automation", "development"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
+    "License :: Other/Proprietary License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -42,9 +42,23 @@ Documentation = "https://github.com/grichardsonEntity/entity-agents-python#readm
 [project.scripts]
 entity-agents = "entity_agents:main"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["entity_agents*"]
+[tool.setuptools]
+packages = [
+    "entity_agents",
+    "entity_agents.shared",
+    "entity_agents.shelly",
+    "entity_agents.sydney",
+    "entity_agents.amber",
+    "entity_agents.valentina",
+    "entity_agents.victoria",
+    "entity_agents.brettjr",
+    "entity_agents.tango",
+    "entity_agents.sophie",
+    "entity_agents.asheton",
+    "entity_agents.denisy",
+    "entity_agents.quinn",
+    "entity_agents.vera",
+]
 
 [tool.setuptools.package-dir]
 entity_agents = "."
